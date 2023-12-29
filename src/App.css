@@ -1,38 +1,78 @@
+/*Main div of the website*/
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.App-title {
+  cursor: pointer;
+}
+
+.App-title:hover {
+  color: #d8d8d8; 
+}
+
+/*Movie list shown after searching*/
+.movie-list { 
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*Idividual movie tiles shown in the list*/
+.movie { 
+  background: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 5px #9b9b9b;
+  border-radius: 5px;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie img {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 5px 5px #9b9b9b;
+}
+
+.movie img:hover {
+  transform: scale(1.05);
+}
+
+.movie h3 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie h3:hover {
+  transform: scale(1.05);
+}
+
+/*Movie details page shown after clicking on a movie*/
+.movie-details img { 
+  box-shadow: 0 5px 5px #9b9b9b;
+  margin-top: 20px;
+}
+
+/*Movie details review section*/
+.review-container { 
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.review-author {
+  font-weight: bold;
+}
+
+.review-content {
+  font-style: italic;
+  margin-top: 5px;
 }
