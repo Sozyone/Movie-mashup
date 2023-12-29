@@ -45,7 +45,7 @@ const MovieDetails = () => {
               </div>
             ))
           ) : (
-            <div>No reviews found.</div> // TMDB doesn't have reviews.
+            <div>No reviews found.</div> // If TMDB doesn't have reviews.
           )
         )}
       </div>
